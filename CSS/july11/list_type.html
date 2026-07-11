@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>defining the list types in css</title>
+    <style>
+        li{
+            list-style-type: circle;
+            list-style-position: outside;
+        }
+        h3, div{background-color: lightcoral;} /* this is the comments 
+        multi comment lines maybe s */
+
+        /* the selectors topic */
+        *{
+            background-color: lightgrey;
+        }
+        /* div > p{background-color: lightseagreen;} */
+        input[type="text"] {background-color: lightpink; color: gray;}
+
+        div[data-color]{background-color: lightskyblue; font-size: 60px;}
+        div[data-color= "green"]{background-color: greenyellow; color: green; font-size: 40px;}
+
+        [class *= "foo"]{color: darkblue;}
+
+        /* div > p{
+            color: darkgoldenrod;
+        } */
+         p + p{
+            color: red;
+         }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>cat</li>
+        <li>dog</li>
+        <li>sheep</li>
+        <li>fox</li>
+        <li>donkey</li>
+    </ul>
+    <div>
+        <h4>This will be in different color bro </h4>
+        <p>hi</p>
+    </div>
+    <h3>bross</h3>
+    <input type="text">
+    <div data-color="red">
+        <p>this may be </p>
+    </div>
+    <div data-color="green">
+        <p>Well the world is beautiful !</p>
+    </div>
+    <div class="foo"><p>the white text </p></div>
+    <div class="foolish"><p>the white text </p></div>
+    <div>
+        <p>hello</p>
+        <section>
+            <p>thi si the nested para </p>
+        </section>
+    </div>
+    <p>this is red </p>
+    <p>this will also </p>
+    <p>this maybe </p><hr>
+    <p>no tis </p>
+</body>
+</html>
