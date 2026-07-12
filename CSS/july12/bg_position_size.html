@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-image: url("https://static.wikia.nocookie.net/ae35e8ea-8ac9-4cea-917b-f4837c63e35c/scale-to-width/755");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: lightgrey;
+            border: 1px lightslategray solid;
+            width: 20em;
+            height: 20em;
+        }
+        .box.cover{background-size: cover;}
+        .box.contain {background-size: contain;}
+
+        .bix{
+            background-image: 
+                url("https://static.wikia.nocookie.net/ae35e8ea-8ac9-4cea-917b-f4837c63e35c/scale-to-width/755"),
+                url("https://static.wikia.nocookie.net/ae35e8ea-8ac9-4cea-917b-f4837c63e35c/scale-to-width/755"),
+                url("https://static.wikia.nocookie.net/ae35e8ea-8ac9-4cea-917b-f4837c63e35c/scale-to-width/755");
+
+            background-position: right bottom, right bottom, right top;
+            background-size: 250px;
+            background-repeat: no-repeat, repeat, no-repeat;
+            background-attachment: fixed;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>image background </h1>
+    <div class="box cover" style="background-position: 50% 0%;"></div>
+    <div class="box contain"></div>
+    <div style="
+        width: 100vw;
+        height: 200vh;
+    " class="bix">
+
+    </div>
+    <div style="width: 50%; height: 50%; background-color: rgba(0, 0, 0, );">
+        <h1>hello</h1>
+    </div>
+
+</body>
+</html>

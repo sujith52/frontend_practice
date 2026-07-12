@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indepth into the selectors </title>
+    <style>
+        .warningnot{color: blue;}
+        .warningnot .important{color: red ;}
+        p:last-of-type {color: green;}
+        h1:last-of-type {color: lightsalmon;}
+        input:in-range{ border: 2px solid red;}
+        p:not(.count){color: lightslategray;}
+        .boxs{height: 80px;}
+        .boxs > input{margin: 20px;}
+        /* this class is very intresting bros  */
+        .boxs:focus-within{background-color: green;}
+    </style>
+</head>
+<body>
+    <h1>css selectors </h1>
+    <h2>pesudo class</h2>
+    <div class="warningnot">
+        <p>this might not be the red danger </p>
+    </div>
+    <div class=" important warningnot">
+        <p>this might be in the real danger  </p>
+    </div>
+
+    <div class="cont">
+        <p>1st one </p>
+        <p>2nd one </p>
+        <h1>1st head </h1>
+        <h1>2nd head </h1>
+        <p>last </p>
+    </div>
+    <input type="number" min="10" max="20" value="18">
+    <p class="count"> this para will not be in red i guess</p>
+
+    <div class="boxs">
+        <input type="text">
+    </div>
+</body>
+</html>
