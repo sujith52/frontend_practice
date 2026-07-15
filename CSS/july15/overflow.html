@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow practice !</title>
+    <style>
+        .mdiv{
+            width: 100px;
+            outline: 1px dashed darkblue;
+        }
+
+        .main{
+            width: 100px;
+            height: 100px;
+            outline: 2px dashed black;
+            white-space: nowarp;
+        }
+    </style>
+</head>
+<body>
+    <div class="mdiv" style="overflow-wrap: normal;">
+        <p>Lorem ipsum <span style="color: red;">helllllllllllllllllllllllllllllllllllllllllowwww</span>, dolor sit amet consectetur adipisicing elit. Aspernatur animi labore voluptas, eaque necessitatibus neque voluptatibus temporibus beatae aliquam deserunt veritatis vel corporis consequatur natus praesentium exercitationem ratione provident eveniet.</p>
+    </div>
+    <div class="mdiv" style="overflow-wrap: break-word;">
+        <p>Lorem ipsum <span style="color: red;">helllllllllllllllllllllllllllllllllllllllllowwww</span> dolor sit amet consectetur adipisicing elit. Aut, inventore. Esse quae non minus quia! Impedit perspiciatis quibusdam ducimus quas ipsum at debitis ullam nisi et dolorem! Voluptate, ut molestiae.</p>
+    </div>
+
+    <div style="overflow-x: hidden;" class="main">
+        <p>this para will be hidden if the div is so small  right and the end od  the </p>
+    </div>
+    <div style="overflow-y: hidden; margin-top: 20px;" class="main">
+        <p>this para will be hidden if the div is so small  right and the end od  the </p>
+    </div>
+
+</body>
+</html>

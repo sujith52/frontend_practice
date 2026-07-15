@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>centering the things of knowing unknown dimensons !</title>
+    <style>
+        body{margin: 0;}
+        .outer{
+            position: absolute;
+            display: table;
+            height: 100%;
+            width: 100%;
+            background: #ccc;
+        }
+        .inner{
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .centered{
+            display: inline-block;
+            text-align: left;
+            background: #fff;
+            padding: 20px;
+            border: 2px solid lightskyblue;
+        }
+
+        .cent{
+            position: absolute;
+            background: #bbb;
+
+            left: 50%;
+            width: 150px;
+            margin-left: -75px;
+            text-align: center;
+        }
+
+        .withhei{
+            position: absolute;
+            background: lightcoral;
+
+            top: 50%;
+            height: 200px;
+            margin-top: -100px;
+            text-align: center;
+            align-items: center;
+        }
+
+        .wrapper{
+            display: table;
+            vertical-align: middle;
+            background: red;
+            height: 200px;
+            width: 200px;
+            position: relative;
+            z-index: 999;
+        }
+        .parent{
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .child{
+            display: inline-block;
+            vertical-align: middle;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer ">
+        <div class="inner ">
+            <div class="centered ">
+                <p>the centered para </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cent">
+        <h4>centers </h4>
+    </div>
+    <div class="withhei">
+        <h4>heigght align</h4>
+    </div>
+    
+        <div class="wrapper">
+            <div class="parent ">
+                <div class="child">
+                    <p>hello</p>
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margins </title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .box{
+            margin: 10px;
+        }
+        .rect{
+            width: 80px;
+            height: 50px;
+            background: lightsalmon;
+        }
+    </style>
+</head>
+<body>
+    <h1>margins </h1>
+    <div class="box">
+        <p>hello world </p>
+    </div>
+    <p class="box">hi</p>
+    <p>margin colapse </p>
+    <div style="margin: 0; width: 500px; background: lightgray;">
+        <div style="margin: 15px; background: lightblue;">
+            <p>the 15px margin </p>
+        </div>
+        <div style="margin: 25px; background: lightpink;">
+            <p>the 25px will win becz it is higgest !</p>
+        </div>
+    </div>
+    <div style="border: 2px solid red;">
+        <div style="width: 50px; height: 50px; background: orange; margin: 5px 10px 20px 30px; "></div>
+    </div>
+
+    <div style="width: 300; height: 300px; display: inline;">base div </div>
+    <div style=" margin-left: -20px;"><p>overlapping div </p></div>
+
+    <h1>paddings</h1>
+    <div style="padding-left: 25px; margin-left: 25px; border: 1px solid red;" class="rect"></div>
+</body>
+</html>
