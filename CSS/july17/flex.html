@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex </title>
+    <style>
+        .box{
+            width: 70px;
+            height: 70px;
+            background: grey;
+            border-radius: 20px;
+        }
+
+        .conts{
+            display: flex;
+            flex-direction: row;
+            background: lightgreen;
+            flex-wrap: wrap;
+            align-items: stretch;
+            align-content: stretch;
+            justify-content: flex-start;
+            height: 300px;
+
+        }
+        .flshitem{
+            background-color: lightskyblue;
+            margin: 10px;
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 200px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="conts">
+    <div class="flshitem"></div>
+    <div class="flshitem"></div>
+    <div class="flshitem"></div>
+    <div class="flshitem"></div>
+
+</div>
+
+
+<div style="display: flex; align-items: stretch;">
+    <div style="background: lightblue;">
+        <p>hello <br>hi <br>and <br>good bye </p>
+    </div>
+    <div style="background-color: lightseagreen;">
+        <p>sujith  <br>sreej <br>lathas <br></p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<h3>flex</h3>
+
+<div style="display: flex; justify-content: center; align-items: center;">
+    <div style="width: 500px; height: 100px; background: lightcyan;">
+        <h2 style="text-align: center;font-variant: small-caps; ">
+            The Flex Box
+        </h2>
+    </div>
+</div>
+<br>
+
+<div style="display: flex; 
+align-items: center; justify-content: center; gap: 5px; background: lightcyan;
+padding: 20px; border: 3px dashed blue;">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+<br>
+<div style="display: flex; 
+align-items: center; justify-content: center; gap: 5px; background: lightcyan;
+padding: 20px; border: 3px dashed red; flex-direction: column;">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+
+<div style="display: flex; align-items: center; justify-content: center; border: 2px solid red; gap: 5px; ">
+    <h1>content</h1>
+    <h2>well</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dicta inventore alias, similique nihil temporibus commodi ex ipsam quod in veniam officiis nesciunt unde voluptate quas. Tempora, doloribus. Ea, omnis.</p>
+</div>
+<br>
+
+
+
+
+
+
+
+
+</body>
+</html>

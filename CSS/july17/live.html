@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pesudo classes </title>
+    <style>
+        div::before{
+            content: 'before';
+            color: pink;
+            border: 1px dashed red;
+        }
+        div::after{
+            content: 'after';
+            color: green;
+            border: 1px dashed gray;
+        }
+        div{
+            color: aqua;
+            border: 1px dashed black;
+        }
+        li::before{
+            content: "";
+            display: inline-block;
+            margin-right: 10px;
+            height: 10px;
+            width: 10px;
+            background: linear-gradient(red, green);
+        }
+        ul{
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <h6>pesudo class </h6>
+    <div>  - the new class - </div>
+    <ul>
+        <li>hello</li>
+        <li>byee</li>
+    </ul>
+</body>
+</html>
