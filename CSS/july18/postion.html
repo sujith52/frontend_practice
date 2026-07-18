@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css positioning</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            box-shadow: 0 0 6px lightslategrey;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h6>Css positioning</h6>
+    <h4>z index</h4><br>
+    <div class="box" style="left: 150px; top: 50px; z-index: 1; background: lightblue; "></div>
+    <div class="box" style="left: 100px; top: 100px; z-index: 2; background: lightgrey; "></div>
+    <div class="box" style="left: 50px; top: 150px; z-index: 3; background: lightgoldenrodyellow; 
+        display: flex; align-items: center; justify-content: center;">
+        <h3 style="color: black;">Cards Are Fun !</h3>
+    </div>
+    <div class="box" style="top: 350px; left: 15px; background: lightseagreen;"></div>
+</body>
+</html>
