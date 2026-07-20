@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d transfrom</title>
+    <style>
+        .box{
+            margin: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: lightgray;
+            /* transform: rotateY(45deg) rotateZ(45deg); */
+            box-shadow: inset 10px 5px 10px #272727;
+        }
+        .dabba{
+            margin: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+        }
+        .dabba:hover{
+            transform: rotateY(180deg);
+        }
+        .front, .back{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            backface-visibility: hidden;
+        }
+        .front{
+            background-color: green;
+        }
+        .back{
+            background-color: red;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <h4>3d transforms </h4>
+    <hr>
+    <div class="box"></div>
+    <div class="dabba">
+        <div class=" front"></div>
+    <div class=" back"></div>
+    </div>
+</body>
+</html>

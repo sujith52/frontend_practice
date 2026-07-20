@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Transforms</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: lightgray;
+            margin: 15px;
+        }
+        .exp1{
+            transform: rotate(95deg);
+            transform-origin: bottom right;
+        }
+        .exp2{
+            transform: scale(0.5, 0.3);
+        }
+        .exp3{
+            transform: skew(40deg , -35deg);
+        }
+        .exp4{
+            transform: rotate(25deg) translateX(55px) translateY(25px) ;
+        }
+
+        .transform {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background: teal;
+            transition: transform 1s;
+        }
+        .origin1{
+            transform-origin: 0 0;
+        }
+        .origin2{
+            transform-origin: 100% 0;
+        }
+        .transform:hover{
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <h4>@2d transformations </h4>
+    <div class="box exp1"></div><hr>
+    <h5>scale </h5>
+    <div class="box exp2"></div><hr>
+    <h5>skew</h5>
+    <div class="box exp3"></div><hr>
+    <h5>multiple transformations </h5>
+    <div class=" box exp4"></div>
+    <hr>
+    <div class="transform origin1"></div><hr>
+    <div class="transform origin2"></div>
+</body>
+</html>

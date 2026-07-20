@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations </title>
+    <style>
+        @keyframes rainbow {
+        0%     { background-color: #ff0000; }
+        8.333%     { background-color: #ff8000; }
+        16.667%     { background-color: #ffff00; }
+        25.000%     { background-color: #80ff00; }
+        33.333%     { background-color: #00ff00; }
+        41.667%     { background-color: #00ff80; }
+        50.000%     { background-color: #00ffff; }
+        58.333%     { background-color: #0080ff; }
+        66.667%     { background-color: #0000ff; }
+        75.000%     { background-color: #8000ff; }
+        83.333%     { background-color: #ff00ff; }
+        91.667%     { background-color: #ff0080; }
+        100.00%     { background-color: #ff0000; }
+        }
+        .rainbowbg {
+            animation: rainbow 5s infinite;
+            width: 150px;
+            height: 150px;
+        }
+        .rainbowbg:hover{
+            transition-property: width , height;
+            width: 200px;
+            height: 200px;
+            transition-duration: 2s, 500ms;
+            transition-timing-function: linear;
+
+        }
+        .boxed{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: gray;
+            animation: rainbow 3s ease-in 1s  reverse infinite;
+        }
+        .boxed:hover{
+            transition: all 900ms ease;
+            background-color: blueviolet;
+            /* animation: infinite; */
+            
+        }
+    </style>
+</head>
+<body>
+    <h5>animations </h5>
+    <div class="rainbowbg"></div>
+    <h4>added the hover effect also for this one </h4>
+    <hr><br>
+    <div class="boxed"></div>
+</body>
+</html>
