@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css inheritance</title>
+    <style>
+        #ids{
+            color: red;
+            padding: 15px;
+        }
+        #ids p{
+            padding: inherit;
+        }
+        .boxed {
+            width: 150px;
+            height: 100px;
+            background-image: url(https://static.vecteezy.com/system/resources/thumbnails/023/009/485/small_2x/abstract-animal-owl-portrait-with-colorful-double-exposure-paint-with-generative-ai-free-photo.jpeg);
+            background-size: cover;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>css inheritance</h2>
+    <hr>
+    <div id="ids">
+        <p>this is the path</p>
+        <h4>the heading hag </h4>
+    </div><hr>
+    
+    <h2>Clipping and masking </h2><hr>
+    <div class="boxed" style="mask-image: linear-gradient(to right , white, transparent);"></div>
+
+    <div class="boxed" style="clip-path: circle(40% at 50% 50%);"></div>
+    <div class="boxed" style="clip-path: polygon(0 0, 10% 90%, 100% 50%);"></div>
+
+    <div class="boxed" style="mask-image: radial-gradient(circle farthest-side at center , transparent 10%, white 50%);"></div>
+</body>
+</html>
